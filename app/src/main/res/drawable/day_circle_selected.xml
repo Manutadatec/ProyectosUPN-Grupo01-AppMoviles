@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Relleno del círculo (el color azul de la selección) -->
+    <solid android:color="#3F51B5"/>
+
+    <!-- Tamaño. Asegúrate de que coincida con el width/height del TextView (40dp) -->
+    <size
+        android:width="40dp"
+        android:height="40dp"/>
+
+</shape>

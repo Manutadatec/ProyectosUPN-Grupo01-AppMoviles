@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MediTime</string>
+    <string name="frequency_prompt">Selecciona la Frecuencia de Dosis</string>
+    <string name="interval_prompt">Selecciona el Intervalo de Horas</string>
+</resources>

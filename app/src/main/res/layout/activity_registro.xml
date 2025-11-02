@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pantalla_in"
+    tools:context=".RegistroActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:id="@+id/formularioFondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/fondo_blanco_redondeado"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnVolver"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="Volver"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="276dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Regístrate"
+                    android:textColor="#009688"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPerfil"
+                    android:layout_width="123dp"
+                    android:layout_height="111dp"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Foto de perfil"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/txtAgregarFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Añadir foto"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E"
+                android:textColorLink="#009688" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E"
+                android:textColorLink="#009688" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/txtFechaNacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="DD / MM / AA"
+                    android:inputType="none"
+                    android:paddingEnd="40dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#9E9E9E"
+                    android:textColorLink="#009688" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Seleccionar fecha"
+                    android:src="@drawable/ic_calendar" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <Spinner
+                    android:id="@+id/spinnerDni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#999898"
+                    android:foregroundTint="#999898"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/txtNumeroDni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:hint="Número de documento"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E"
+                android:textColorLink="#009688" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:hint="Número de teléfono"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E"
+                android:textColorLink="#009688" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/txtContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:paddingEnd="40dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#9E9E9E"
+                    android:textColorLink="#009688" />
+
+                <ImageView
+                    android:id="@+id/ic_ojo1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Mostrar contraseña"
+                    android:src="@drawable/ic_eye" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/txtRepetirContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Repetir Contraseña"
+                    android:inputType="textPassword"
+                    android:paddingEnd="40dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#9E9E9E"
+                    android:textColorLink="#009688" />
+
+                <ImageView
+                    android:id="@+id/ic_ojo2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Mostrar contraseña"
+                    android:src="@drawable/ic_eye" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Tipo de Perfil"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/grupoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/rbPaciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0B615A"
+                    android:buttonTint="#0B615A"
+                    android:checked="true"
+                    android:text="Paciente"
+                    android:textColor="#000000"
+                    android:textColorLink="#009688" />
+
+                <RadioButton
+                    android:id="@+id/rbDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:backgroundTint="#0B615A"
+                    android:buttonTint="#0B615A"
+                    android:text="Cuidador"
+                    android:textColor="#000000"
+                    android:textColorLink="#009688" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#0B615A"
+                android:text="Registrarse"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorLink="#009688"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/capa_blanca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CCFFFFFF" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

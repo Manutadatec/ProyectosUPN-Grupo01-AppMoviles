@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ampm_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <string-array name="interval_array">
+        <item>Cada 4 Hrs</item>
+        <item>Cada 6 Hrs</item>
+        <item>Cada 8 Hrs</item>
+        <item>Cada 12 Hrs</item>
+        <item>Cada 24 Hrs</item>
+    </string-array>
+
+    <string-array name="frequency_array">
+        <item>Diariamente</item>
+        <item>Interdiario</item>
+        <item>Semanalmente</item>
+    </string-array>
+</resources>

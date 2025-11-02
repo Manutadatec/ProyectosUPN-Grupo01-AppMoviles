@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/fondoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondoreloj"
+        android:contentDescription="Fondo médico" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/CardVerificacion"
+                android:layout_width="329dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <!-- LOGO Y TÍTULO -->
+
+                <!-- SALUDO -->
+
+                <TextView
+                    android:id="@+id/lblBIenvenida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="24dp"
+                    android:text="Bienvenido a MediTime"
+                    android:textColor="#2E2E2E"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/txttelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#BDBDBD"
+                    android:hint="DNI/Correo"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:textColor="#212121"
+                    android:textColorHint="#9E9E9E" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <EditText
+                        android:id="@+id/txtcontra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:backgroundTint="#BDBDBD"
+                        android:paddingEnd="48dp"
+                        android:padding="12dp"
+                        android:textColor="#212121"
+                        android:textColorHint="#9E9E9E" />
+
+                    <ImageView
+                        android:id="@+id/ic_ojo"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_eye"
+                        android:contentDescription="Mostrar/Ocultar contraseña" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnIniciarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:backgroundTint="@android:color/white"
+                android:padding="12dp"
+                android:radius="25dp"
+                android:text="Iniciar Sesión"
+                android:textAllCaps="false"
+                android:textColor="#0D1C1F"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
